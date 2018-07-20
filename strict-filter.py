@@ -4,7 +4,7 @@ strict-filter.py - строгий фильтр, который пропуска�
 
 Usage:
   strict-filter.py (-h | --help)
-  strict-filter.py [-i FILE | --input-file FILE] [-o FILE | --output-file FILE] [--filters-path PATH] [--filters-pick FILTER ...] [--interactive] [--interactive-new-filter]
+  strict-filter.py [-i INPUT_FILE | --input-file INPUT_FILE] [-o OUTPUT_FILE | --output-file OUTPUT_FILE] [--filters-path PATH] [--filters-pick FILTER ...] [--interactive] [--interactive-new-filter]
 
 Options:
   -h --help                 вывести справку
@@ -19,9 +19,8 @@ Options:
 
 from docopt import docopt
 
-arguments = docopt(__doc__, version='Naval Fate 2.0')
+arguments = docopt(__doc__)
 print(arguments)
-
 
 
 # прочитать строку из файла
